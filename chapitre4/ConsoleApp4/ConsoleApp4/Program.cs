@@ -7,9 +7,10 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            // Liste qui contiendra les différents facteurs à multiplier
             List<int> facteurs = new List<int>();
             string reponse = "ok";
-            int resultat = 1;
+            int resultat = 1; 
             string saisie;  // Variable servant a la conversion
             while(reponse == "ok")
             {

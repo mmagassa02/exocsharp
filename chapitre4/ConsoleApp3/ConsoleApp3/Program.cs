@@ -7,6 +7,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
+            // Liste avec des nombres prédéfinis
             List<int> numbers = new List<int> { 12, 24, 36, 48, 60, 72, 84};
             int cpt = 0;
             //Somme des éléments de la liste

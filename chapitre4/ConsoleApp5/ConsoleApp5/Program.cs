@@ -6,7 +6,10 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            int niveau;
+            
+            int niveau; // Pour récupérer le niveau de la tornade
+
+            // Tableau à 2 dimension: on associe le niveau de la tornade à ses caractéristiques.
             string[,] fujita = new string[6, 2]
             {
                 {"F0", "Dégâts légers : certains dommages sont subis par les cheminées, les antennes de télévision, les bardeaux, les arbres, les enseignes et les fenêtres." },
