@@ -1,0 +1,13 @@
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.exe
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.deps.json
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.runtimeconfig.json
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.runtimeconfig.dev.json
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.dll
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp3.1\ConsoleApp3.pdb
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.AssemblyInfoInputs.cache
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.AssemblyInfo.cs
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.dll
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.pdb
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp3.1\ConsoleApp3.genruntimeconfig.cache
