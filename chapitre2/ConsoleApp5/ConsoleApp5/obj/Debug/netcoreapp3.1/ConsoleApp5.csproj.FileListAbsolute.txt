@@ -1,0 +1,14 @@
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.exe
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.deps.json
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.runtimeconfig.json
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.runtimeconfig.dev.json
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.dll
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\bin\Debug\netcoreapp3.1\ConsoleApp5.pdb
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.csproj.AssemblyReference.cache
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.AssemblyInfoInputs.cache
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.AssemblyInfo.cs
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.csproj.CoreCompileInputs.cache
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.dll
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.pdb
+C:\Users\magas\exocsharp\chapitre2\ConsoleApp5\ConsoleApp5\obj\Debug\netcoreapp3.1\ConsoleApp5.genruntimeconfig.cache
