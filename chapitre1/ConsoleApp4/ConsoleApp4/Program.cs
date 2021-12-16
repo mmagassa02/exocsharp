@@ -6,10 +6,10 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            string mot1 = "Monsieur", mot2 = "Vincent";
+            string gender = "Monsieur", prenom = "Vincent";
             int nb = 1;
             // Affichage avec des "+" pour la concaténation.
-            Console.WriteLine("Bonjour " + mot1 + " " + mot2 + ", vous êtes venu nous rendre visite " + nb + " fois");
+            Console.WriteLine("Bonjour " + gender + " " + prenom + ", vous êtes venu nous rendre visite " + nb + " fois");
         }
     }
 }

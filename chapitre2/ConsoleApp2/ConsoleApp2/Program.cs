@@ -7,12 +7,12 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             int age;
-            Console.WriteLine("Quel age avez vous?\n");
+            Console.WriteLine("Quel âge avez-vous?\n");
             age = int.Parse(Console.ReadLine());
             if (age >= 18)
-                Console.Write("Vous avez " + age + ", vous êtres donc majeur.e\n");
+                Console.Write("Vous avez " + age + ", vous êtes donc majeur.e\n");
             else
-                Console.Write("Vous avez " + age + ", vous êtres donc mineur.e\n");
+                Console.Write("Vous avez " + age + ", vous êtes donc mineur.e\n");
         }
     }
 }

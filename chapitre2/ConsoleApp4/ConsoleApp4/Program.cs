@@ -6,19 +6,17 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            string login, password;
-            Console.WriteLine("Saisir identifiant");
-            login = Console.ReadLine();
-            Console.WriteLine("Saisir mot de passe");
-            password = Console.ReadLine();
-            switch (login)
+            const string login = "mmagassa";
+            const string password = "123456";
+            Console.WriteLine("Veuillez saisir votre identifiant");
+            string loginuser = Console.ReadLine();
+            Console.WriteLine("Veuilez saisir votre mot de passe");
+            string passworduser = Console.ReadLine();
+            // On teste 2 variables avec un switch (les saisies de l'utilisateur).
+            switch (loginuser, passworduser)
             {
-                case "mmagassa":
-                    if (password == "123456")
+                case (login, password):
                         Console.WriteLine("Bienvenue à la manu");
-                    
-                    else
-                        Console.WriteLine("Mauvais identifiant ou mauvais mot de passe.");
                     break;
                 default:
                     Console.WriteLine("Mauvais identifiant ou mauvais mot de passe.");

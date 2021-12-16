@@ -7,23 +7,24 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int age;
-            string sexe;
-            Console.WriteLine("Quel age avez vous?\n");
+            string gender;
+            Console.WriteLine("Quel âge avez-vous?\n");
             age = int.Parse(Console.ReadLine());
-            Console.WriteLine("Quel est votre sexe? (Saisir F ou M)\n");
-            sexe = Console.ReadLine();
+            Console.WriteLine("Quel est votre sexe? (F ou M)\n");
+            gender = Console.ReadLine();
+            //Personne majeure
             if (age >= 18)
             {
-                if (sexe == "M")
+                if (gender == "M")
                     Console.WriteLine("Vous êtes un homme et vous êtes majeur.");
-                else if (sexe == "F")
+                else if (gender == "F")
                     Console.WriteLine("Vous êtes une femme et vous êtes majeure.");
             }
             else
-            {
-                if (sexe == "M")
+            {// Personne mineure
+                if (gender == "M")
                     Console.WriteLine("Vous êtes un homme et vous êtes mineur.");
-                else if (sexe == "F")
+                else if (gender == "F")
                     Console.WriteLine("Vous êtes une femme et vous êtes mineure.");
             }
         }
