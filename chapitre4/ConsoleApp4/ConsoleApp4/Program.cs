@@ -9,12 +9,13 @@ namespace ConsoleApp4
         {
             // Liste qui contiendra les différents facteurs à multiplier
             List<int> facteurs = new List<int>();
+            int nbfacteurs = 0;
             string reponse = "ok";
-            int resultat = 1; 
-            string saisie;  // Variable servant a la conversion
+            int result = 1; 
+            string saisie;  // Variable servant à la conversion
             while(reponse == "ok")
             {
-                Console.WriteLine("Saisir un nombre que vous voulez multiplier ou taper stop");
+                Console.WriteLine("Veuillez saisir un nombre que vous voulez multiplier (taper stop pour arreter");
                 saisie = Console.ReadLine();
                 if (saisie == "stop")
                 {
@@ -24,20 +25,23 @@ namespace ConsoleApp4
                 else
                 {
                     facteurs.Add(int.Parse(saisie));
+                    nbfacteurs++;
                 }
 
             }
-
-            // Multiplication
-            Console.WriteLine("Liste des nombres a multiplier : ");
-            for (int i = 0; i < facteurs.Count; i++)
-            {
-                Console.Write(facteurs[i] + " ");
-                resultat = resultat * facteurs[i];
-            }
-
             //Affichage du résultat
-            Console.WriteLine("\nLe résultat de la multiplication est: " + resultat);
+            if(nbfacteurs == 0)
+                Console.WriteLine("Vous n'avez rien entré...");
+            else
+            {
+                Console.Write("\nListe des nombres à multiplier : ");
+                for (int i = 0; i < facteurs.Count; i++)
+                {
+                    Console.Write(facteurs[i] + " ");
+                    result = result * facteurs[i];
+                }
+                Console.WriteLine("\nLe résultat de la multiplication est: " + result);
+            }
 
         }
     }

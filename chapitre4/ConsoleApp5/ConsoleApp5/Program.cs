@@ -7,7 +7,7 @@ namespace ConsoleApp5
         static void Main(string[] args)
         {
             
-            int niveau; // Pour récupérer le niveau de la tornade
+            int level; // Pour récupérer le niveau de la tornade
 
             // Tableau à 2 dimension: on associe le niveau de la tornade à ses caractéristiques.
             string[,] fujita = new string[6, 2]
@@ -20,13 +20,13 @@ namespace ConsoleApp5
                 {"F5", "Dégâts incroyables : les maisons sont rasées ou projetées sur de grandes distances. Les tornades F5 peuvent causer des dommages très importants à de grosses structures telles que les écoles et les motels et peuvent arracher les murs extérieurs et les toits (parfois surnommé « le doigt de Dieu »."},
             };
 
-            Console.WriteLine("Saisir le type de tornade (Entre 0 et 5)");
-            niveau = int.Parse(Console.ReadLine());
+            Console.WriteLine("Veuillez saisir le type de tornade (Entre 0 et 5)");
+            level = int.Parse(Console.ReadLine());
 
 
             //Affichage des détails de la tornade selon son niveau
-            Console.WriteLine("Niveau de la tornade: " + fujita[niveau, 0]);
-            Console.WriteLine("Niveau de la tornade: " + fujita[niveau, 1]);
+            Console.WriteLine("Niveau de la tornade: " + fujita[level, 0]);
+            Console.WriteLine("Niveau de la tornade: " + fujita[level, 1]);
 
 
         }
