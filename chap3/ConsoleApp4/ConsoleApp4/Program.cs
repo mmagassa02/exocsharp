@@ -13,12 +13,12 @@ namespace ConsoleApp4
             //.Nextc(1, 51) pour créer aléatoirement un nombre entre 1 et 51
             int reponse = rnd.Next(1, 51);
             int saisie =0;
-            bool success;
+            bool verif;
             while (saisie != reponse)
             {
                 Console.WriteLine("Veuillez saisir un entier entre 1 et 50");
-                success = int.TryParse(Console.ReadLine(), out saisie); // On vérifie que l'on entre bien un entier
-                if (success == true)
+                verif = int.TryParse(Console.ReadLine(), out saisie); // On vérifie que l'on entre bien un entier
+                if (verif == true)
                 {
                     nbTentatives++;
                     if (saisie == reponse) // Si l'utilisateur a saisi la bonne réponse

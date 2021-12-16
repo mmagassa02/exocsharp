@@ -8,7 +8,7 @@ namespace ConsoleApp5
         {
             
             int level; // Pour récupérer le niveau de la tornade
-
+            bool verif;
             // Tableau à 2 dimension: on associe le niveau de la tornade à ses caractéristiques.
             string[,] fujita = new string[6, 2]
             {
@@ -20,13 +20,29 @@ namespace ConsoleApp5
                 {"F5", "Dégâts incroyables : les maisons sont rasées ou projetées sur de grandes distances. Les tornades F5 peuvent causer des dommages très importants à de grosses structures telles que les écoles et les motels et peuvent arracher les murs extérieurs et les toits (parfois surnommé « le doigt de Dieu »."},
             };
 
+            question:
             Console.WriteLine("Veuillez saisir le type de tornade (Entre 0 et 5)");
-            level = int.Parse(Console.ReadLine());
+            verif = int.TryParse(Console.ReadLine(), out level);
+            if(verif == true)
+            {
+                //Affichage des détails de la tornade selon son niveau
+                if(level >= 0 && level <= 5 )
+                    Console.WriteLine("Niveau de la tornade: " + fujita[level, 0] +"\n"+ fujita[level, 1]);
+                else
+                {
+                    Console.WriteLine("Vous devez saisir un nombre compris entre 0 et 5");
+                    goto question;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Mauvaise saisie");
+                goto question;
+            }
 
 
-            //Affichage des détails de la tornade selon son niveau
-            Console.WriteLine("Niveau de la tornade: " + fujita[level, 0]);
-            Console.WriteLine("Niveau de la tornade: " + fujita[level, 1]);
+            
+
 
 
         }
