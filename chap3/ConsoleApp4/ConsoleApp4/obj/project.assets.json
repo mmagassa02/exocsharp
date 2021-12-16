@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\magas\\exocsharp\\chapitre4\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-      "projectName": "ConsoleApp3",
-      "projectPath": "C:\\Users\\magas\\exocsharp\\chapitre4\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+      "projectUniqueName": "C:\\Users\\magas\\exocsharp\\chapitre3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
+      "projectName": "ConsoleApp4",
+      "projectPath": "C:\\Users\\magas\\exocsharp\\chapitre3\\ConsoleApp4\\ConsoleApp4\\ConsoleApp4.csproj",
       "packagesPath": "C:\\Users\\magas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\magas\\exocsharp\\chapitre4\\ConsoleApp3\\ConsoleApp3\\obj\\",
+      "outputPath": "C:\\Users\\magas\\exocsharp\\chapitre3\\ConsoleApp4\\ConsoleApp4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\magas\\AppData\\Roaming\\NuGet\\NuGet.Config",
