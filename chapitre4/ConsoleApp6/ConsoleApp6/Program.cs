@@ -4,8 +4,8 @@ namespace ConsoleApp6
 {
     class Program
     {
-        //Création de l'enum week
-        enum week
+        //Création de l'enum Week
+        enum Week
         {
             Lundi,
             Mardi,
@@ -17,15 +17,15 @@ namespace ConsoleApp6
         }
         static void Main(string[] args)
         {
-            // Affichage des éléments de week
+            // Affichage des éléments de Week
             for(int i = 0; i < 7; i++)
             {
-                Console.WriteLine(Enum.GetName(typeof(week), i));
+                Console.WriteLine(Enum.GetName(typeof(Week), i));
             }
 
-            // Affichage de la valeur 4 de l'enumeration week
+            // Affichage de la valeur 4 de l'enumeration Week
             Console.WriteLine();
-            Console.WriteLine(Enum.GetName(typeof(week), 4));
+            Console.WriteLine(Enum.GetName(typeof(Week), 4));
         }
     }
 }

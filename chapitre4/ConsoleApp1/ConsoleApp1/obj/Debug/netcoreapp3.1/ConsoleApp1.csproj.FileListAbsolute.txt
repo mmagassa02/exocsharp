@@ -11,3 +11,4 @@ C:\Users\magas\exocsharp\chapitre4\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3
 C:\Users\magas\exocsharp\chapitre4\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
 C:\Users\magas\exocsharp\chapitre4\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
 C:\Users\magas\exocsharp\chapitre4\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+C:\Users\magas\exocsharp\chapitre4\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.AssemblyReference.cache

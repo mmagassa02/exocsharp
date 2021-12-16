@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Création d'un tableau Le nombre d'éléments du tableau est fixe (ici 7 élément ayant pour index 0 à 6.  
+            //Création d'un tableau Le nombre d'éléments du tableau est fixe (ici 7 élément ayant pour index 0 à 6).  
             string[] week = new string[7];
             week[0] = "Lundi";
             week[1] = "Mardi";
@@ -25,9 +25,8 @@ namespace ConsoleApp1
             Console.WriteLine(week[3]);
             Console.WriteLine("\n");
             //Affichage du tableau corrigé
-            for (int i = 0; i < 7; i++)
-                Console.WriteLine(week[i]);
-
+            foreach (string i in week)
+                Console.WriteLine(i);
         }
     }
 }
