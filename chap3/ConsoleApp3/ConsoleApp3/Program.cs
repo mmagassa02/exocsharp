@@ -8,7 +8,7 @@ namespace ConsoleApp3
         {
             int result = 0;
             string saisie = "oui";
-            //Tant que l'utilisateur souhaire ajouter des nombres a additionner
+            //Tant que l'utilisateur souhaite ajouter des nombres a additionner
             while (saisie == "oui")
             {
                 Console.WriteLine("Entrer un nombre a additionner");

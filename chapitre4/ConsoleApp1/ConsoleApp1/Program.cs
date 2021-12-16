@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Création d'un tableau
+            //Création d'un tableau Le nombre d'éléments du tableau est fixe (ici 7 élément ayant pour index 0 à 6.  
             string[] week = new string[7];
             week[0] = "Lundi";
             week[1] = "Mardi";

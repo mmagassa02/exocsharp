@@ -7,32 +7,38 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             // Variable de type Random pour génerer un chiffre aléatoire.
+
             Random rnd = new Random();
             int nbTentatives = 0;
-            //Premier argument (1) pour commencer a 1 et 51 pour aller jusqu'a 51-1
+            //.Nextc(1, 51) pour créer aléatoirement un nombre entre 1 et 51
             int reponse = rnd.Next(1, 51);
-            int saisie = 0;
+            int saisie =0;
+            bool success;
             while (saisie != reponse)
             {
-                Console.WriteLine("Saisir un nombre entre 1 et 50");
-                saisie = int.Parse(Console.ReadLine());
-                if (saisie == reponse) // Si l'utilisateur a saisi la bonne réponse
+                Console.WriteLine("Saisir un entierentre 1 et 50");
+                success = int.TryParse(Console.ReadLine(), out saisie);
+                if (success == true)
                 {
                     nbTentatives++;
-                    Console.WriteLine("Bravo vous avez trouvé !\nNombre de tentatives: " + nbTentatives);
-                    break;
-                }
-                else if (saisie < reponse) // Chiffre trop petit
-                {
-                    nbTentatives++;
-                    Console.WriteLine("c'est plus grand\nNombre de tentatives: " + nbTentatives);
-                }
-                else if (saisie > reponse) // Trop grand
-                {
-                    nbTentatives++;
-                    Console.WriteLine("C'est plus petit\nNombre de tentatives:" + nbTentatives);
+                    if (saisie == reponse) // Si l'utilisateur a saisi la bonne réponse
+                    {
+                        Console.WriteLine("Bravo vous avez trouvé !\nNombre de tentatives : " + nbTentatives);
+                        break;
+                    }
+                    else if (saisie < reponse) // Chiffre trop petit
+                    {
+                        Console.WriteLine("c'est plus grand\nNombre de tentatives : " + nbTentatives);
+                    }
+                    else if (saisie > reponse) // Trop grand
+                    {
+                        Console.WriteLine("C'est plus petit\nNombre de tentatives :" + nbTentatives);
+                    }
                 }
             }
+
+
+
         }
     }
 }

@@ -9,7 +9,7 @@ namespace ConsoleApp4
         {
             // Liste qui contiendra les différents facteurs à multiplier
             List<int> facteurs = new List<int>();
-            int nbfacteurs = 0;
+            int nbfacteurs = 0; 
             string reponse = "ok";
             int result = 1; 
             string saisie;  // Variable servant à la conversion
@@ -34,6 +34,7 @@ namespace ConsoleApp4
                 Console.WriteLine("Vous n'avez rien entré...");
             else
             {
+                //L'utilisateur a saisi au minimum une valeur a multiplier.
                 Console.Write("\nListe des nombres à multiplier : ");
                 for (int i = 0; i < facteurs.Count; i++)
                 {

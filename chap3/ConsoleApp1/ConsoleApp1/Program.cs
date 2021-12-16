@@ -6,8 +6,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Boucle qui affiche 10 le même message.
-                Console.WriteLine("Bonjour, je ne suis qu'un simple message. ");
+            //Boucle qui affiche 10 fois le même message.
+                Console.WriteLine("Bonjour, je ne suis qu'un simple message.");
         }
     }
 }
