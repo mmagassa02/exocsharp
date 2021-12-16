@@ -16,8 +16,8 @@ namespace ConsoleApp4
             bool success;
             while (saisie != reponse)
             {
-                Console.WriteLine("Saisir un entierentre 1 et 50");
-                success = int.TryParse(Console.ReadLine(), out saisie);
+                Console.WriteLine("Veuillez saisir un entier entre 1 et 50");
+                success = int.TryParse(Console.ReadLine(), out saisie); // On vérifie que l'on entre bien un entier
                 if (success == true)
                 {
                     nbTentatives++;

@@ -7,34 +7,39 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            // Liste qui contiendra les différents facteurs à multiplier
-            List<int> facteurs = new List<int>();
-            int nbfacteurs = 0; 
-            string reponse = "ok";
-            int result = 1; 
-            string saisie;  // Variable servant à la conversion
-            while(reponse == "ok")
+            List<int> facteurs = new List<int>();// Liste qui contiendra les différents facteurs à multiplier
+            string reponse = "ok", answer;
+            int nbfacteurs = 0, result = 1, saisie;
+            bool success;
+
+            while (reponse == "ok")
             {
-                Console.WriteLine("Veuillez saisir un nombre que vous voulez multiplier (taper stop pour arreter");
-                saisie = Console.ReadLine();
-                if (saisie == "stop")
+                question:
+                Console.WriteLine("Veuillez saisir un nombre que vous voulez multiplier ou stop pour arreter).");
+                answer = Console.ReadLine();
+                // On vérifie dans un premier temps que l'utilisateur a saisi un entier
+                success = int.TryParse(answer, out saisie); 
+                if(success == true)
                 {
-                    reponse = saisie;
-                    break;
-                }
-                else
-                {
-                    facteurs.Add(int.Parse(saisie));
+                    facteurs.Add(saisie);
                     nbfacteurs++;
                 }
-
+                else if (answer == "stop") //Si l'utilisateur n'a pas saisi d'entier, on verifie s'il a saisi "stop"
+                {
+                    reponse = answer;
+                    break;
+                }else
+                {
+                    Console.WriteLine("Vous n'avez pas saisi de nombre...");
+                    goto question;
+                }
             }
             //Affichage du résultat
-            if(nbfacteurs == 0)
+            if (nbfacteurs == 0)
                 Console.WriteLine("Vous n'avez rien entré...");
             else
             {
-                //L'utilisateur a saisi au minimum une valeur a multiplier.
+                //L'utilisateur a saisi au minimum une valeur à multiplier.
                 Console.Write("\nListe des nombres à multiplier : ");
                 for (int i = 0; i < facteurs.Count; i++)
                 {
@@ -43,7 +48,6 @@ namespace ConsoleApp4
                 }
                 Console.WriteLine("\nLe résultat de la multiplication est: " + result);
             }
-
         }
     }
 }
