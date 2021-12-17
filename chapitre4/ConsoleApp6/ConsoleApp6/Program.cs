@@ -4,7 +4,7 @@ namespace ConsoleApp6
 {
     class Program
     {
-        //Création de l'enum Week
+        //Création de l'enum Week (le nom de de l'enum doit commencer par une majuscule.)
         enum Week
         {
             Lundi,
