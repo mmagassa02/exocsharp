@@ -6,8 +6,8 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
-                Console.WriteLine("Bonjour, je suis le message n°" + (i + 1));
+            for (int nbMessage = 0;nbMessage< 10; nbMessage++)
+                Console.WriteLine($"Bonjour, je suis le message n°{nbMessage+1}");
         }
     }
 }

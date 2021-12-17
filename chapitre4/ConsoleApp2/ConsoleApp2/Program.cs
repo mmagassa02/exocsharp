@@ -11,9 +11,9 @@ namespace ConsoleApp2
             List <string> languages = new List<string> {"HTML", "CSS", "Javacrit", "jQuery", "PHP", "Bootstrap", "Java" };
 
             //On affiche la totalité de la liste grâce à une boucle
-            for (int i = 0; i < languages.Count; i++) 
+            for (int name = 0; name < languages.Count; name++) 
             {
-                Console.WriteLine(languages[i]);
+                Console.WriteLine(languages[name]);
              }
 
             Console.WriteLine();
@@ -29,9 +29,9 @@ namespace ConsoleApp2
             languages.Add("C");
             // On réaffiche la liste modifiée
             Console.WriteLine();
-            foreach (string v in languages) //.Count() retourne le nombre d'éléments que contient une liste. 
+            foreach (string name in languages)
             {
-                Console.WriteLine(v);
+                Console.WriteLine(name);
             }
         }
     }

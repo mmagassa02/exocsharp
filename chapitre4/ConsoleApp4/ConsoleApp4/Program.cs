@@ -8,30 +8,33 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             List<int> facteurs = new List<int>();// Liste qui contiendra les différents facteurs à multiplier
-            string reponse = "ok", answer;
+            string  answer;
             int nbfacteurs = 0, result = 1, saisie;
-            bool success;
+            bool success = true;
 
-            while (reponse == "ok")
+
+            while (success)
             {
-                question:
                 Console.WriteLine("Veuillez saisir un nombre que vous voulez multiplier ou stop pour arreter).");
                 answer = Console.ReadLine();
-                // On vérifie dans un premier temps que l'utilisateur a saisi un entier
-                success = int.TryParse(answer, out saisie); 
-                if(success == true)
+                try
                 {
-                    facteurs.Add(saisie);
-                    nbfacteurs++;
-                }
-                else if (answer == "stop") //Si l'utilisateur n'a pas saisi d'entier, on verifie s'il a saisi "stop"
+
+                    // On vérifie dans un premier temps que l'utilisateur a saisi un entier
+                    saisie = int.Parse(answer);
+                        facteurs.Add(saisie);
+                        nbfacteurs++;
+                }catch(Exception)
                 {
-                    reponse = answer;
-                    break;
-                }else
-                {
-                    Console.WriteLine("Vous n'avez pas saisi de nombre...");
-                    goto question;
+                    if(answer == "stop")
+                    {
+                        success = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Mauvaise saisie");
+                    }
+                    
                 }
             }
             //Affichage du résultat
@@ -40,13 +43,14 @@ namespace ConsoleApp4
             else
             {
                 //L'utilisateur a saisi au minimum une valeur à multiplier.
-                Console.Write("\nListe des nombres à multiplier : ");
-                for (int i = 0; i < facteurs.Count; i++)
+
+
+                foreach(int number in facteurs)
                 {
-                    Console.Write(facteurs[i] + " ");
-                    result = result * facteurs[i];
+                    result *= number;
                 }
-                Console.WriteLine("\nLe résultat de la multiplication est: " + result);
+
+                Console.WriteLine("\nLe résultat de la multiplication  " +String.Join(" x ", facteurs)+ " = " +result);
             }
         }
     }

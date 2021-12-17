@@ -7,20 +7,20 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int result = 0;
-            string saisie = "oui";
+            string saisie = "ok";
             //Tant que l'utilisateur souhaite ajouter des nombres a additionner
-            while (saisie == "oui")
+            while (saisie == "ok")
             {
-                Console.WriteLine("Entrer un nombre a additionner");
+                Console.WriteLine("Entrer un nombre à additionner");
                 result = result + int.Parse(Console.ReadLine());
-                //Pour revenir à ce point si l'utilisateur ne saisit pas oui ou non à la question suivante.
+                //Pour revenir à ce point si l'utilisateur ne saisit pas ok ou non à la question suivante.
                 question:
-                Console.WriteLine("Voulez vous ajouter un nombre? (Taper oui ou non)");
+                Console.WriteLine("Voulez vous ajouter un nombre? (Taper ok ou non)");
                 saisie = Console.ReadLine();
                 //L'utilisateur tape non pour ne pas ajouter de nombres à l'addition.
                 if (saisie == "non")
                     break;
-                else if (saisie != "oui")
+                else if (saisie != "ok")
                     goto question;  //On retourne à la ligne 17 plus haut pour reposer la question.
 
             }

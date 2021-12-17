@@ -11,13 +11,13 @@ namespace ConsoleApp3
             List<int> numbers = new List<int> { 12, 24, 36, 48, 60, 72, 84};
             int result = 0;
             //Somme des éléments de la liste
-            for (int i = 0; i< numbers.Count; i++)
+            foreach (int number in numbers)
             {
-                Console.WriteLine(result+ " + " +numbers[i]+ " = " +(result + numbers[i]));
-                result = result + numbers[i];
+              //  Console.Write($"{number} ");
+                result += number;
             }
             // Affichage du résultat final
-            Console.WriteLine("Le résultat final :" +result);
+            Console.WriteLine("\nLe résultat final de l'opération " +String.Join(" + ", numbers)+ " = "+result);
         }
     }
 }

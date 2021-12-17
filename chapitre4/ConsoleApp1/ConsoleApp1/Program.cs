@@ -24,9 +24,10 @@ namespace ConsoleApp1
             Console.WriteLine("\n");
             Console.WriteLine(week[3]);
             Console.WriteLine("\n");
+            //On peut redimensionner le tableau avec Array.Resize(ref week, 7);
             //Affichage du tableau corrigé
-            foreach (string i in week)
-                Console.WriteLine(i);
+            foreach (string day in week)
+                Console.WriteLine(day);
         }
     }
 }
